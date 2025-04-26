@@ -26,7 +26,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../Pictures/Netflix-Premium-Gratis-en-2022-Apk-e1659877674993.jpg</pixmap>
+    <pixmap>../img/Netflix-Premium-Gratis-en-2022-Apk-e1659877674993.jpg</pixmap>
    </property>
    <property name="scaledContents">
     <bool>true</bool>
@@ -66,7 +66,7 @@
      <string>Sign in</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="txt_username">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -87,7 +87,7 @@
      <string>email or phone number</string>
     </property>
    </widget>
-   <widget class="QLineEdit" name="lineEdit_2">
+   <widget class="QLineEdit" name="txt_password">
     <property name="geometry">
      <rect>
       <x>70</x>
@@ -166,6 +166,19 @@
     </property>
     <property name="text">
      <string>Need help?</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_eyes">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>160</y>
+      <width>31</width>
+      <height>29</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>PushButton</string>
     </property>
    </widget>
   </widget>
