@@ -1,6 +1,6 @@
-from PyQt6.QtWidgets import*
-from PyQt6.QtCore import*
-from PyQt6.QtGui import*
+from PyQt6.QtWidgets import *
+from PyQt6.QtCore import *
+from PyQt6.QtGui import *
 from PyQt6 import uic
 
 class Alert(QMessageBox):
@@ -16,7 +16,6 @@ class Alert(QMessageBox):
         self.setText(message)
         self.exec()
         
-msg = Alert()
 
 class Login(QWidget):
     def __init__(self):
@@ -75,12 +74,11 @@ class Login(QWidget):
         self.home = Home(email)
         self.home.show()
 
-class Register(Qwidget):
+class Register(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUI("ui/register.ui", self)
+        uic.loadUi("ui/signup.ui", self)
 
-        
         self.confirm_pass_input = self.findChild(QLineEdit, "txt_confirm_password")
         self.email_input = self.findChild(QLineEdit, "txt_email")
         self.password_input = self.findChild(QLineEdit, "txt_password")
@@ -105,16 +103,17 @@ class Register(Qwidget):
         email = self.email_input.text().strip()
         password = self.password_input.text().strip()
         confirm_pass = self.confirm_pass_input.text().strip()
+        name = self.name_input.text().strip()
 
         if email == "":
-        msg.error_message("Register", "password is required")
-        self.email_input.setFocus()
-        return
+            msg.error_message("Register", "Email is required")
+            self.email_input.setFocus()
+            return
     
         if name == "":
-        msg.error_massage("Register", "Name is required")
-        self.name_input.setFocus()
-        return
+            msg.error_message("Register", "Name is required")
+            self.name_input.setFocus()
+            return
     
         if password == "":
             msg.error_message("Register", "Password is required")
@@ -127,18 +126,20 @@ class Register(Qwidget):
             return
         
         if password != confirm_pass:
-            msg.error_message("Register", "password and confirm password do not match")
+            msg.error_message("Register", "Password and confirm password do not match")
             self.password_input.setFocus()
+            return
 
         with open("data/users.txt", "r") as file:
             for line in file:
-                data = line.strip.().split(",")
-                msg.error_message("Register", "email already exists")
-                self.email_input.setFocus()
-                return
+                data = line.strip().split(",")
+                if data[0] == email:
+                    msg.error_message("Register", "Email already exists")
+                    self.email_input.setFocus()
+                    return
             
         with open("data/users.txt", "a") as file:
-            file.write(f"{email}, {password}, {name}\n")
+            file.write(f"{email},{password},{name}\n")
             
         msg.success_message("Register", "Account created successfully")
         self.show_login()
@@ -147,8 +148,14 @@ class Register(Qwidget):
         self.login = Login()
         self.login.show()
 
- class Home(QWidget):
+class Home(QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi("ui/register.ui", self)
+        uic.loadUi("ui/home.ui", self)
 
+if __name__ == "__main__":
+    app = QApplication([])
+    msg = Alert()
+    login = Login()
+    login.show()
+    app.exec()
