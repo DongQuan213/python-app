@@ -22,16 +22,15 @@ class Login(QWidget):
         super().__init__()
         uic.loadUi("ui/login.ui", self)
 
-        self.confirm_pass_input = self.findChild(QLineEdit, "txt_confirm_password")
         self.email_input = self.findChild(QLineEdit, "txt_email")
         self.password_input = self.findChild(QLineEdit, "txt_password")
         self.btn_login = self.findChild(QPushButton, "btn_login")
-        self.btn_eye_p = self.findChild(QPushButton, "btn_eye_p")
         self.btn_register = self.findChild(QPushButton, "btn_register")
-        self.btn_eye_cp = self.findChild(QPushButton, "btn_eye_cp")
+        self.btn_eye = self.findChild(QPushButton, "btn_eye")
 
-        self.btn_eyes.clicked.connect(lambda:self.show_password(self.btn_eyes,self.password_input))
+        self.btn_eye.clicked.connect(lambda:self.show_password(self.btn_eye, self.password_input))
         self.btn_login.clicked.connect(self.login)
+        self.btn_register.clicked.connect(self.show_register)
 
     def show_password(self, button: QPushButton, input: QLineEdit):
         if input.echoMode() ==  QLineEdit.EchoMode.Password:
@@ -55,7 +54,7 @@ class Login(QWidget):
             self.password_input.setFocus()
             return
         
-        with open("data/user.txt", "r") as file:
+        with open("data/users.txt", "r") as file:
             for line in file:
                 data = line.strip().split(",")
                 if data[0] == email and data[1] == password:
@@ -69,10 +68,12 @@ class Login(QWidget):
     def show_register(self):
         self.register = Register()
         self.register.show()
+        self.close()
 
     def show_home(self, email):
         self.home = Home(email)
         self.home.show()
+        self.close()
 
 class Register(QWidget):
     def __init__(self):
@@ -90,6 +91,8 @@ class Register(QWidget):
 
         self.btn_eye_p.clicked.connect(lambda: self.show_password(self.btn_eye_p, self.password_input))
         self.btn_eye_cp.clicked.connect(lambda: self.show_password(self.btn_eye_cp, self.confirm_pass_input))
+        self.btn_register.clicked.connect(self.register)
+        self.btn_login.clicked.connect(self.show_login)
 
     def show_password(self, button: QPushButton, input: QLineEdit):
         if input.echoMode() ==  QLineEdit.EchoMode.Password:
@@ -147,11 +150,13 @@ class Register(QWidget):
     def show_login(self):
         self.login = Login()
         self.login.show()
+        self.close()
 
 class Home(QWidget):
-    def __init__(self):
+    def __init__(self, email):
         super().__init__()
         uic.loadUi("ui/home.ui", self)
+        self.email = email
 
 if __name__ == "__main__":
     app = QApplication([])
