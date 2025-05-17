@@ -19,14 +19,14 @@
   <widget class="QStackedWidget" name="stackedWidget">
    <property name="geometry">
     <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1080</width>
-     <height>720</height>
+     <x>-10</x>
+     <y>59</y>
+     <width>1081</width>
+     <height>661</height>
     </rect>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color:rgb(0, 0, 0)</string>
+    <string notr="true">color: rgb(255, 255, 255);</string>
    </property>
    <property name="currentIndex">
     <number>3</number>
@@ -202,150 +202,160 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="Detail"/>
-   <widget class="QWidget" name="Home">
-    <widget class="QLabel" name="label">
+   <widget class="QWidget" name="Detail">
+    <widget class="QLabel" name="label_24">
      <property name="geometry">
       <rect>
-       <x>20</x>
-       <y>0</y>
-       <width>141</width>
-       <height>61</height>
+       <x>10</x>
+       <y>80</y>
+       <width>471</width>
+       <height>391</height>
       </rect>
      </property>
      <property name="text">
       <string/>
      </property>
      <property name="pixmap">
-      <pixmap>../img/images-removebg-preview.png</pixmap>
+      <pixmap>../img/818eHGRkkmL.jpg</pixmap>
      </property>
      <property name="scaledContents">
       <bool>true</bool>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QLabel" name="label_25">
      <property name="geometry">
       <rect>
-       <x>190</x>
-       <y>20</y>
-       <width>111</width>
+       <x>540</x>
+       <y>110</y>
+       <width>171</width>
        <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 6px 12px;
+      <string notr="true">color: rgb(255, 255, 255);
+font_size: 36px
 </string>
      </property>
      <property name="text">
-      <string>Trang chủ</string>
+      <string>Fast and furious 8(2017)</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
-     <property name="geometry">
-      <rect>
-       <x>300</x>
-       <y>20</y>
-       <width>111</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: white;
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 6px 12px;</string>
-     </property>
-     <property name="text">
-      <string>Phim Thình</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_4">
-     <property name="geometry">
-      <rect>
-       <x>400</x>
-       <y>20</y>
-       <width>111</width>
-       <height>31</height>
-      </rect>
-     </property>
-     <property name="styleSheet">
-      <string notr="true">color: white;
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 6px 12px;</string>
-     </property>
-     <property name="text">
-      <string>Phim</string>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="pushButton_5">
+    <widget class="QLabel" name="label_26">
      <property name="geometry">
       <rect>
        <x>500</x>
-       <y>20</y>
-       <width>101</width>
-       <height>29</height>
+       <y>160</y>
+       <width>261</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Thời gian ra mắt: 14 tháng 4 năm 2017</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>200</y>
+       <width>251</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 6px 12px;</string>
+      <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>Mới thêm</string>
+      <string>Thể loại: phiêu lưu, tội phạm, giật gân</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_6">
+    <widget class="QLabel" name="label_28">
      <property name="geometry">
       <rect>
-       <x>600</x>
-       <y>20</y>
-       <width>161</width>
-       <height>29</height>
+       <x>500</x>
+       <y>250</y>
+       <width>251</width>
+       <height>21</height>
       </rect>
      </property>
      <property name="styleSheet">
-      <string notr="true">color: white;
-    background-color: transparent;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 6px 12px;</string>
+      <string notr="true">color: rgb(255, 255, 255);</string>
      </property>
      <property name="text">
-      <string>Danh sách của tôi</string>
+      <string>Thời gian: 136 phút</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_7">
+    <widget class="QLabel" name="label_29">
      <property name="geometry">
       <rect>
-       <x>780</x>
-       <y>20</y>
-       <width>93</width>
-       <height>29</height>
+       <x>500</x>
+       <y>290</y>
+       <width>261</width>
+       <height>21</height>
       </rect>
      </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
      <property name="text">
-      <string/>
+      <string>Quốc gia: American</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>330</y>
+       <width>261</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Đạo diễn: F.Gary Gray</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>500</x>
+       <y>370</y>
+       <width>401</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Diễn viên chính: Jason Statham, Vin Diesel, Dwayne Johnson</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btn_watch">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>478</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background:none</string>
+     </property>
+     <property name="text">
+      <string>Play</string>
      </property>
      <property name="icon">
       <iconset>
-       <normaloff>../img/magnifying-glass-solid.svg</normaloff>../img/magnifying-glass-solid.svg</iconset>
+       <normaloff>../img/play-solid.svg</normaloff>../img/play-solid.svg</iconset>
      </property>
     </widget>
+   </widget>
+   <widget class="QWidget" name="Home">
     <widget class="QFrame" name="frame">
      <property name="geometry">
       <rect>
@@ -443,7 +453,7 @@
         <bool>true</bool>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton_10">
+      <widget class="QPushButton" name="btn_detail">
        <property name="geometry">
         <rect>
          <x>90</x>
@@ -452,8 +462,12 @@
          <height>29</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">border:none;
+background:none</string>
+       </property>
        <property name="text">
-        <string>PushButton</string>
+        <string>Watch</string>
        </property>
       </widget>
       <widget class="QLabel" name="label_12">
@@ -498,8 +512,12 @@
         <height>29</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+background:none</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Watch</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_11">
@@ -562,8 +580,12 @@
         <height>29</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+background:none</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Watch</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_14">
@@ -626,8 +648,12 @@
         <height>29</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+background:none</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Watch</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_15">
@@ -754,8 +780,12 @@
         <height>29</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+background:none</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Watch</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_19">
@@ -818,8 +848,12 @@
         <height>29</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">border:none;
+background:none</string>
+      </property>
       <property name="text">
-       <string>PushButton</string>
+       <string>Watch</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_21">
@@ -859,7 +893,291 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QWidget" name="page"/>
+   <widget class="QWidget" name="Watch">
+    <widget class="QSlider" name="horizontalSlider_2">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>460</y>
+       <width>160</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>20</y>
+       <width>761</width>
+       <height>431</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background:rgb(255, 255, 255)</string>
+     </property>
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>450</y>
+       <width>111</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background:none</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../img/play-solid.svg</normaloff>../img/play-solid.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>460</y>
+       <width>93</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background:none</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../../Downloads/volume-high-solid.svg</normaloff>../../../../Downloads/volume-high-solid.svg</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>40</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background:none;
+color:rgb(0, 0, 0)</string>
+     </property>
+     <property name="text">
+      <string>Video name</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>410</y>
+       <width>81</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border:none;
+background:none;
+color:rgb(0, 0, 0)</string>
+     </property>
+     <property name="text">
+      <string>00:00/00:00</string>
+     </property>
+    </widget>
+    <widget class="QSlider" name="horizontalSlider">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>410</y>
+       <width>160</width>
+       <height>22</height>
+      </rect>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_23">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>141</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>../img/images-removebg-preview.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_home">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;
+</string>
+   </property>
+   <property name="text">
+    <string>Trang chủ</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_17">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>20</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;</string>
+   </property>
+   <property name="text">
+    <string>Phim Thình</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_18">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>20</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;</string>
+   </property>
+   <property name="text">
+    <string>Phim</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_20">
+   <property name="geometry">
+    <rect>
+     <x>500</x>
+     <y>20</y>
+     <width>101</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;</string>
+   </property>
+   <property name="text">
+    <string>Mới thêm</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_16">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>20</y>
+     <width>161</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;</string>
+   </property>
+   <property name="text">
+    <string>Danh sách của tôi</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_19">
+   <property name="geometry">
+    <rect>
+     <x>800</x>
+     <y>20</y>
+     <width>141</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../img/magnifying-glass-solid.svg</normaloff>../img/magnifying-glass-solid.svg</iconset>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_profile">
+   <property name="geometry">
+    <rect>
+     <x>970</x>
+     <y>20</y>
+     <width>93</width>
+     <height>29</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border:none;
+background:none</string>
+   </property>
+   <property name="text">
+    <string>Profile</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../img/user-solid.svg</normaloff>../img/user-solid.svg</iconset>
+   </property>
   </widget>
  </widget>
  <resources/>

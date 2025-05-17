@@ -38,7 +38,7 @@
      <x>380</x>
      <y>30</y>
      <width>371</width>
-     <height>551</height>
+     <height>571</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -274,7 +274,7 @@ font-size: 20px</string>
     border-radius: 4px; /* Bo góc nhẹ */</string>
    </property>
    <property name="text">
-    <string>create</string>
+    <string>Sign Up</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_login">
@@ -287,7 +287,7 @@ font-size: 20px</string>
     </rect>
    </property>
    <property name="text">
-    <string>PushButton</string>
+    <string>Login</string>
    </property>
   </widget>
   <widget class="QPushButton" name="btn_eye_p">
