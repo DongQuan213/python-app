@@ -159,12 +159,14 @@ class Home(QWidget):
 
         self.id = id
         self.user = get_user_by_id(id)
+        self.load_user_info()
 
         self.stack_widget = self.findChild(QStackedWidget,"stackedWidget")
         self.btn_home = self.findChild(QPushButton,"btn_home")
         self.btn_profile = self.findChild(QPushButton,"btn_profile")
         self.btn_detail = self.findChild(QPushButton,"btn_detail")
         self.btn_watch = self.findChild(QPushButton,"btn_watch")
+        self.btn_save_account = self.findChild(QPushButton, "btn_save_account")
 
         self.txt_name = self.findChild(QLineEdit, "txt_name")
         self.txt_email = self.findChild(QLineEdit, "txt_email")
@@ -194,6 +196,14 @@ class Home(QWidget):
             self.user["avatar"] = file
             self.btn_avatar.setIcon(QIcon(file))
             update_user_avatar(self.id, file)
+
+    def update_user_info(self):
+        name = self.txt_name.text().strip()
+        birthday = self.txt_birthday.date().toString("dd//MM//yyyy")
+        gender = self.txt_gender.currentText()
+        update_user(self.id, name, birthday, gender)
+        msg.success_message("update", "user info updated successfully")
+        self.load_user_info
 
 if __name__ == "__main__":
     app = QApplication([])
