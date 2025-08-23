@@ -46,7 +46,7 @@
     border-radius: 10px;</string>
    </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_3">
@@ -167,19 +167,6 @@ font-size: 20px</string>
     <string>Password</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_7">
-   <property name="geometry">
-    <rect>
-     <x>250</x>
-     <y>320</y>
-     <width>63</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
-   </property>
-  </widget>
   <widget class="QLineEdit" name="txt_password">
    <property name="geometry">
     <rect>
@@ -202,19 +189,6 @@ font-size: 20px</string>
    </property>
    <property name="placeholderText">
     <string>Password</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_8">
-   <property name="geometry">
-    <rect>
-     <x>484</x>
-     <y>380</y>
-     <width>63</width>
-     <height>20</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>TextLabel</string>
    </property>
   </widget>
   <widget class="QLabel" name="label_9">
