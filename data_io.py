@@ -18,13 +18,14 @@ def create_user(email, password, name, birthday = "", gender = ""):
         "name": name,
         "birthday": birthday,
         "gender": gender,
+        "avatar": ""
     })
-    write_json("data/users.json")
+    write_json("data/users.json", users)
 
 def get_user_by_id(id):
-    users = load_json("data/user.json")
+    users = load_json("data/users.json")
     for user in users:
-        if user ["id "] == id:
+        if user["id"] == id:
             return user
     return None
 
