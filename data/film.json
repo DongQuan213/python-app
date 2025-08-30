@@ -1,0 +1,124 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Thanh gươm diệt quỷ: Vô hạn thành",
+      "release_date": "2025-08-15",
+      "genre": ["Anime", "Hành động", "Phiêu lưu"],
+      "country": "Nhật Bản",
+      "director": "Haruo Sotozaki",
+      "main_actor": "Natsuki Hanae",
+      "description": "Tanjiro và các đồng đội đột nhập vào Vô Hạn Thành để đối đầu với Muzan.",
+      "trailer": "film/trailer_thanhguomdietquy.mp4",
+      "img": "img/thanhguomdietquy.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Lật mặt 8",
+      "release_date": "2024-04-26",
+      "genre": ["Hành động", "Tâm lý"],
+      "country": "Việt Nam",
+      "director": "Lý Hải",
+      "main_actor": "Huỳnh Đông",
+      "description": "Một câu chuyện đầy kịch tính với nhiều nút thắt bất ngờ trong hành trình truy tìm sự thật.",
+      "trailer": "film/trailer_latmat8.mp4",
+      "img": "img/latmat8.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Fast and Furious 8",
+      "release_date": "2017-04-14",
+      "genre": ["Hành động", "Tội phạm"],
+      "country": "Mỹ",
+      "director": "F. Gary Gray",
+      "main_actor": "Vin Diesel",
+      "description": "Dom phản bội gia đình để hợp tác với một kẻ tội phạm công nghệ cao.",
+      "trailer": "film/trailer_fastandfurious.mp4",
+      "img": "img/fastandfurious8.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Thám tử Kiên: Kỳ án không đầu",
+      "release_date": "2025-04-30",
+      "genre": ["Trinh thám"],
+      "country": "Việt Nam",
+      "director": "Chưa rõ",
+      "main_actor": "Chưa rõ",
+      "description": "Một vụ án kỳ bí liên quan đến những cái chết không lời giải.",
+      "trailer": "film/trailer_thamtukien.mp4",
+      "img": "img/thamtukien.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Avatar 3",
+      "release_date": "2025-12-19",
+      "genre": ["Khoa học viễn tưởng", "Phiêu lưu"],
+      "country": "Mỹ",
+      "director": "James Cameron",
+      "main_actor": "Sam Worthington",
+      "description": "Jake Sully tiếp tục hành trình bảo vệ Pandora cùng gia đình mình.",
+      "trailer": "film/trailer_avatar.mp4",
+      "img": "img/avatar.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Người Nhện: Không còn nhà",
+      "release_date": "2021-12-17",
+      "genre": ["Siêu anh hùng", "Hành động"],
+      "country": "Mỹ",
+      "director": "Jon Watts",
+      "main_actor": "Tom Holland",
+      "description": "Peter Parker đối mặt với đa vũ trụ và những kẻ thù cũ trở lại.",
+      "trailer": "film/trailer_spiderman.mp4",
+      "img": "img/spiderman.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Minecraft: The Movie",
+      "release_date": "2025-04-04",
+      "genre": ["Phiêu lưu", "Giả tưởng"],
+      "country": "Mỹ",
+      "director": "Jared Hess",
+      "main_actor": "Jack Black",
+      "description": "Một nhóm anh hùng chiến đấu để cứu thế giới Minecraft khỏi Ender Dragon.",
+      "trailer": "film/trailer_minecraft.mp4",
+      "img": "img/minecraft.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Bí kíp luyện rồng",
+      "release_date": "2010-03-26",
+      "genre": ["Hoạt hình", "Phiêu lưu"],
+      "country": "Mỹ",
+      "director": "Chris Sanders & Dean DeBlois",
+      "main_actor": "Jay Baruchel",
+      "description": "Một cậu bé Viking kết bạn với rồng và thay đổi cả thế giới của mình.",
+      "trailer": "film/trailer_bikipluyenrong.mp4",
+      "img": "img/bikipluyenrong.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Lưỡi hái tử thần",
+      "release_date": "2025-5-16",
+      "genre": ["Kinh dị"],
+      "country": "Chưa rõ",
+      "director": "Chưa rõ",
+      "main_actor": "Chưa rõ",
+      "description": "Một thực thể chết chóc săn lùng những kẻ phạm tội trong đêm tối.",
+      "trailer": "film/trailer_destination.mp4",
+      "img": "img/luoihaituthan.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Vùng đất linh hồn",
+      "release_date": "2001-07-20",
+      "genre": ["Hoạt hình", "Giả tưởng"],
+      "country": "Nhật Bản",
+      "director": "Hayao Miyazaki",
+      "main_actor": "Rumi Hiiragi",
+      "description": "Cô bé Chihiro lạc vào thế giới linh hồn và tìm cách trở về.",
+      "trailer": "film/trailer_vungdatlinhhon.mp4",
+      "img": "img/vungdatlinhhon.jpg"
+    }
+  ]
+}
