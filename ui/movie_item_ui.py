@@ -12,9 +12,9 @@ from PyQt6 import QtCore, QtGui, QtWidgets
 class Ui_MovieItem(object):
     def setupUi(self, MovieItem):
         MovieItem.setObjectName("MovieItem")
-        MovieItem.resize(300, 400)
-        MovieItem.setMinimumSize(QtCore.QSize(300, 400))
-        MovieItem.setMaximumSize(QtCore.QSize(300, 400))
+        MovieItem.resize(300, 260)
+        MovieItem.setMinimumSize(QtCore.QSize(300, 260))
+        MovieItem.setMaximumSize(QtCore.QSize(300, 260))
         MovieItem.setStyleSheet("QWidget#MovieItem {\n"
 "    background-color: black;\n"
 "    border: 1px solid rgba(255, 255, 255, 0.8);\n"
@@ -30,9 +30,9 @@ class Ui_MovieItem(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.bannerLabel.sizePolicy().hasHeightForWidth())
         self.bannerLabel.setSizePolicy(sizePolicy)
-        self.bannerLabel.setMinimumSize(QtCore.QSize(300, 300))
-        self.bannerLabel.setStyleSheet("border-top-left-radius: 15px;\n"
-"border-top-right-radius: 15px;")
+        self.bannerLabel.setMinimumSize(QtCore.QSize(300, 170))
+        self.bannerLabel.setStyleSheet("border-top-left-radius: 12px;\n"
+"border-top-right-radius: 12px;")
         self.bannerLabel.setText("")
         self.bannerLabel.setScaledContents(True)
         self.bannerLabel.setAlignment(QtCore.Qt.AlignmentFlag.AlignCenter)
@@ -41,7 +41,7 @@ class Ui_MovieItem(object):
         self.titleLabel = QtWidgets.QLabel(parent=MovieItem)
         self.titleLabel.setStyleSheet("color: white;\n"
 "font-family: Geist;\n"
-"font-size: 16px;\n"
+"font-size: 14px;\n"
 "font-weight: bold;\n"
 "padding: 0 10px;")
         self.titleLabel.setText("")

@@ -6,6 +6,26 @@ from PyQt6.QtMultimediaWidgets import *
 from PyQt6 import uic
 import sys
 from data_io import *
+import os
+
+def normalize_path(path: str) -> str:
+    """Return an absolute path for resources declared in JSON.
+
+    - Accepts both absolute and relative inputs
+    - Tries current working directory and this file's directory as bases
+    """
+    normalized = os.path.normpath(path)
+    # If already absolute and exists
+    if os.path.isabs(normalized) and os.path.exists(normalized):
+        return normalized
+    candidates = [
+        os.path.join(os.getcwd(), normalized),
+        os.path.join(os.path.dirname(__file__), normalized),
+    ]
+    for candidate in candidates:
+        if os.path.exists(candidate):
+            return candidate
+    return normalized
 
 class Alert(QMessageBox):
     def error_message(self, title, message):
@@ -229,7 +249,8 @@ class Home(QWidget):
 
         self.btn_home.clicked.connect(lambda: self.navigate_screen(self.stackedWidget, 2))
         self.btn_profile.clicked.connect(lambda: self.navigate_screen(self.stackedWidget, 0))
-        self.btn_watch.clicked.connect(lambda: self.navigate_screen(self.stackedWidget, 3))
+        # Play button on Detail page should start the video of current movie
+        self.btn_watch.clicked.connect(self.loadVideo)
         self.btn_avatar.clicked.connect(self.update_avatar)
         self.btn_save_account.clicked.connect(self.update_user_info)
         
@@ -379,12 +400,15 @@ class Home(QWidget):
         # Connect signals
         self.playBtn.clicked.connect(self.play)
         self.volumeBtn.clicked.connect(self.toggleMute)
+        self.volumeBar.valueChanged.connect(self.setVolume)
+        self.durationBar.sliderMoved.connect(self.setPosition)
         
         # Setup video widget
         placeholder = self.findChild(QWidget, 'videoWidget')
         self.videoWidget = QVideoWidget()
         self.videoWidget.setGeometry(placeholder.geometry())
         self.videoWidget.setParent(placeholder.parentWidget())
+        self.videoWidget.show()
         placeholder.hide()
         
         # Setup media player
@@ -392,6 +416,13 @@ class Home(QWidget):
         self.mediaPlayer.setVideoOutput(self.videoWidget)
         self.audioOutput = QAudioOutput(self)
         self.mediaPlayer.setAudioOutput(self.audioOutput)
+        # initialize volume
+        self.setVolume(self.current_volume)
+        # connect player signals once
+        self.mediaPlayer.playbackStateChanged.connect(self.mediaStateChanged)
+        self.mediaPlayer.positionChanged.connect(self.positionChanged)
+        self.mediaPlayer.durationChanged.connect(self.durationChanged)
+        self.mediaPlayer.errorOccurred.connect(self.handleError)
 
     def loadMovies(self):
         # Get all movies from film.json
@@ -413,8 +444,8 @@ class Home(QWidget):
             itemWidget = MovieItemWidget(
                 movie["id"], 
                 movie["title"], 
-                movie["img"],  
-                movie["trailer"],  
+                normalize_path(movie["img"]),  
+                normalize_path(movie["trailer"]),  
                 movie.get("description", "")
             )
             itemWidget.set_user_id(self.user_id)  # Set user_id for the widget
@@ -458,7 +489,7 @@ class Home(QWidget):
         
         # Set the banner image
         if movie.get('img'):
-            self.lbl_image.setPixmap(QPixmap(movie["img"]))
+            self.lbl_image.setPixmap(QPixmap(normalize_path(movie["img"])))
         
         # Format and set the description with word wrapping
         description = movie.get("description", "No description available")
@@ -491,17 +522,12 @@ class Home(QWidget):
             return
         try:
             movie = get_film_by_id(self.movie_id)
+            print(movie)
             # Normalize video path
             video_path = normalize_path(movie["trailer"])
             self.mediaPlayer.setSource(QUrl.fromLocalFile(video_path))
             self.mediaPlayer.play()
             self.lbl_title.setText(movie["title"])
-            self.durationBar.sliderMoved.connect(self.setPosition)
-            self.volumeBar.sliderMoved.connect(self.setVolume)
-            self.mediaPlayer.playbackStateChanged.connect(self.mediaStateChanged)
-            self.mediaPlayer.positionChanged.connect(self.positionChanged)
-            self.mediaPlayer.durationChanged.connect(self.durationChanged)
-            self.mediaPlayer.errorOccurred.connect(self.handleError)
             self.stackedWidget.setCurrentIndex(3)
         except Exception as e:
             print(f"Error loading video: {e}")

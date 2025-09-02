@@ -7,19 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>300</width>
-    <height>400</height>
+    <height>260</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>300</width>
-    <height>400</height>
+    <height>260</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
     <width>300</width>
-    <height>400</height>
+    <height>260</height>
    </size>
   </property>
   <property name="styleSheet">
@@ -56,12 +56,12 @@
      <property name="minimumSize">
       <size>
        <width>300</width>
-       <height>300</height>
+       <height>170</height>
       </size>
      </property>
      <property name="styleSheet">
-      <string notr="true">border-top-left-radius: 15px;
-border-top-right-radius: 15px;</string>
+      <string notr="true">border-top-left-radius: 12px;
+border-top-right-radius: 12px;</string>
      </property>
      <property name="text">
       <string/>
@@ -79,7 +79,7 @@ border-top-right-radius: 15px;</string>
      <property name="styleSheet">
       <string notr="true">color: white;
 font-family: Geist;
-font-size: 16px;
+font-size: 14px;
 font-weight: bold;
 padding: 0 10px;</string>
      </property>
