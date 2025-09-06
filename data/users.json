@@ -7,5 +7,14 @@
         "birthday": "01//01//2000",
         "gender": "None",
         "avatar": ""
+    },
+    {
+        "id": 2,
+        "email": "handongquan2012@gmail.com",
+        "password": "handongquan3",
+        "name": "handongquan",
+        "birthday": "",
+        "gender": "",
+        "avatar": "img/avatar.jpg"
     }
 ]

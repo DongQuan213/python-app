@@ -550,9 +550,7 @@ class Home(QWidget):
         self.durationBar.setRange(0, self.mediaPlayer.duration())
     
     def handleError(self):
-        self.playBtn.setEnabled(False)
         error_message = self.mediaPlayer.errorString()
-        self.playBtn.setText(f"Error: {error_message}")
         print(f"Media Player Error: {error_message}")
         
     def play(self):

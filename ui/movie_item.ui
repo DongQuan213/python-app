@@ -175,7 +175,7 @@ QPushButton:hover {
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/info-badge.svg</normaloff>../img/info-badge.svg</iconset>
+         <normaloff>../img/exclamation-solid-full.svg</normaloff>../img/exclamation-solid-full.svg</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -215,7 +215,7 @@ QPushButton:hover {
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/iconizer-plus-solid.svg</normaloff>../img/iconizer-plus-solid.svg</iconset>
+         <normaloff>../img/plus-solid-full.svg</normaloff>../img/plus-solid-full.svg</iconset>
        </property>
        <property name="iconSize">
         <size>
@@ -258,7 +258,7 @@ QPushButton:hover {
        </property>
        <property name="icon">
         <iconset>
-         <normaloff>../img/iconizer-heart-solid.svg</normaloff>../img/iconizer-heart-solid.svg</iconset>
+         <normaloff>../img/heart-solid-full (1).svg</normaloff>../img/heart-solid-full (1).svg</iconset>
        </property>
        <property name="iconSize">
         <size>
